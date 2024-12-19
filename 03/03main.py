@@ -1,9 +1,9 @@
 import re
 
 def main():
-    pattern = "mul\(\d+,\d+\)"
+    pattern = r"mul\(\d+,\d+\)"
     total = 0
-    with open("./input.txt", "r") as file:
+    with open("03/input.txt", "r") as file:
         for line in file.readlines():
             matches = re.findall(pattern, line)
             for match in matches:

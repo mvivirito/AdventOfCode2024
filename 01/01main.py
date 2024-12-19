@@ -1,7 +1,7 @@
 def main():
     group1 = [] 
     group2 = [] 
-    with open("./input.txt", "r") as file:
+    with open("01/input.txt", "r") as file:
         for line in file.readlines():
             groups = line.split()
             group1.append(int(groups[0]))

@@ -39,7 +39,7 @@ def main():
     def converter(input: str):
         return [int(x) for x in list(input.split())]
 
-    with open("./input.txt", "r") as file:
+    with open("02/input.txt", "r") as file:
         for line in file.readlines():
             current_levels = converter(line)
             if (check_increasing(current_levels) 
